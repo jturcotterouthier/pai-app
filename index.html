@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PAI — Personal AI Infrastructure</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1a1a1a; --bg: #fdfdfc; --muted: #5c5c5c; --rule: #e2e2df; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #e8e8e6; --bg: #161614; --muted: #a0a09c; --rule: #2e2e2b; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.65 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 4rem 1.25rem; }
+  h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 0.3rem; }
+  .sub { color: var(--muted); margin: 0 0 2.5rem; }
+  h2 { font-size: 1.05rem; letter-spacing: 0.02em; text-transform: uppercase;
+       color: var(--muted); margin: 2.5rem 0 0.75rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.35rem 0; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule);
+           color: var(--muted); font-size: 0.9rem; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PAI — Personal AI Infrastructure</h1>
+  <p class="sub">A single-user personal assistant, run by and for Jérôme Turcotte-Routhier.</p>
+
+  <p>PAI is private tooling, not a product. It runs locally on hardware I own and
+     automates my own admin: calendar, reminders, notes, reading, fitness data, and
+     correspondence. There is no sign-up, no hosted service, and no other users.</p>
+
+  <h2>What it connects to</h2>
+  <ul>
+    <li><strong>Google Contacts</strong> — read and write, so the assistant can look up and maintain my own address book.</li>
+    <li><strong>Gmail</strong> — read-only, so it can summarise and triage my own mail. It cannot send.</li>
+  </ul>
+  <p>Both connections are to my personal Google Account and are authorised by me,
+     for me. No one else has access.</p>
+
+  <h2>Privacy</h2>
+  <p>Google data accessed by PAI stays on my own machines. It is not sold, shared,
+     or sent to any third party. See the <a href="privacy.html">privacy policy</a>
+     for the full statement.</p>
+
+  <footer>
+    Contact: <a href="mailto:jerome.turcotte.routhier@gmail.com">jerome.turcotte.routhier@gmail.com</a>
+  </footer>
+</main>
+</body>
+</html>
